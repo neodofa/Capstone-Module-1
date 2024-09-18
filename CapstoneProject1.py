@@ -108,7 +108,7 @@ def validate_dob(dob_input):
     try:
         # TRY TO PARSE THE DATE USING THE EXPECTED FORMAT
         dob = datetime.strptime(dob_input, "%d/%m/%Y")
-        # OPTIONALLY, CHECK IF THE DATE IS NOT IN THE FUTURE
+        # CHECK IF THE DATE IS NOT IN THE FUTURE
         if dob > datetime.now():
             print("Date of birth cannot be in the future.")
             return False, None
