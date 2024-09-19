@@ -84,7 +84,6 @@ def view_students():
     clear_screen()
     print("\n--- Student List ---")
     print(f"{'ID':<5} {'SID':<10} {'Name':<20} {'Class':<6} {'Subject':<10} {'Score':<5}")
-    print("-" * 60)
     for student_id, student in student_data.items():
         print(f"{student_id:<5} {student['SID']:<10} {student['Name']:<20} {student['Class']:<6} {student['Subject']:<10} {student['Score']:<5}")
     
